@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm tốt nghiệp THPT / GDTX online năm 2020 chuẩn</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./javascript/tinhdiem.js   "></script>
+</head>
+
+<body>
+    <center>
+        <h2>Tính điểm xét tốt nghiệp THPT năm 2020 Online</h2>
+        <form name="nhapDiem">
+            <table border="1" cellpadding="20" cellspacing="0">
+                <tr>
+                    <th>Toán</th>
+                    <th>Văn</th>
+                    <th>Ngoại ngữ</th>
+                    <th>Lý / Sử</th>
+                    <th>Hóa / Địa</th>
+                    <th>Sinh / GDCD</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="toan" value="0"></td>
+                    <td><input type="text" id="van" value="0"></td>
+                    <td><input type="text" id="ngoaiNgu" value="0"></td>
+                    <td><input type="text" id="mon1" value="0"></td>
+                    <td><input type="text" id="mon2" value="0"></td>
+                    <td><input type="text" id="mon3" value="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Điểm khuyến khích</th>
+                    <th colspan="2">Điểm trung bình cả năm 12</th>
+                    <th colspan="2">Điểm ưu tiên</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="khuyenKhich" value="0"></td>
+                    <td colspan="2"><input type="text" id="tb12" value="0"></td>
+                    <td colspan="2"><input type="text" id="diemUuTien" value="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" rowspan="2">
+                        <center>
+                            <select name="" id="school">
+                                <option value="THPT">THPT</option>
+                                <option value="GDTX">GDTX</option>
+                            </select>
+                            <button type="button" onclick="tinhDiem()">Tính điểm</button>
+                        </center>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </form>
+        <br><br>
+        <form name="calculator">
+            <table border="1" cellpadding="20" cellspacing="0">
+                <tr>
+                    <th>Điểm sau khi tính</th>
+                    <td>
+                        <div id="diemSauKhiTinh"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kết quả tốt nghiệp</th>
+                    <td>
+                        <div id="ketQuaTotNghiep"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+<footer>
+    <div>
+        <div id="footer-copyright">
+            <p>@2020 - All Right Reserved. Designed and Developed by <a ref="nofollow" href="https://fb.com/qt1st" target="_blank">Quang Truong</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>
