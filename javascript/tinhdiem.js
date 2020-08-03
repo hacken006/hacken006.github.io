@@ -3,6 +3,7 @@ function tinhDiem() {
     var result = 0.0;
     var diem0;
     var text;
+    var check;
     var toan, van, ngoaiNgu, mon1, mon2, mon3, khuyenKhich, tb12, diemUuTien;
     toan = document.getElementById("toan").value;
     van = document.getElementById("van").value;
@@ -28,11 +29,17 @@ function tinhDiem() {
     }
     result = (diem0 * 7 + parseFloat(tb12) * 3) / 10 + parseFloat(diemUuTien);
     if (result > 5 && liet == false) {
-        text = "Tốt Nghiệp!"
-    } else text = "Không Tốt Nghiệp!"
+        text = "Tốt Nghiệp!";
+        check = 1;
+    } else {
+        text = "Không Tốt Nghiệp!";
+        check = 0;
+    }
+
     document.getElementById("ketQuaTotNghiep").innerHTML = text;
     document.getElementById("diemSauKhiTinh").innerHTML = result;
-    if (text = "Không Tốt Nghiệp!") {
+    if (check == 0) {
         alert("Chia buồn với bạn! Chúc bạn ôn tập tốt cho kỳ thi năm sau !")
-    }
+    } else
+        alert("Chúc mừng bạn đã vượt qua kỳ thi tốt nghiệp!")
 }
