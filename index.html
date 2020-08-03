@@ -15,68 +15,76 @@
 <body>
     <center>
         <h2>Tính điểm xét tốt nghiệp THPT năm 2020 Online</h2>
-        <form name="nhapDiem">
-            <table border="1" cellpadding="20" cellspacing="0">
-                <tr>
-                    <th>Toán</th>
-                    <th>Văn</th>
-                    <th>Ngoại ngữ</th>
-                    <th>Lý / Sử</th>
-                    <th>Hóa / Địa</th>
-                    <th>Sinh / GDCD</th>
-                </tr>
-                <tr>
-                    <td><input type="text" id="toan" value="0"></td>
-                    <td><input type="text" id="van" value="0"></td>
-                    <td><input type="text" id="ngoaiNgu" value="0"></td>
-                    <td><input type="text" id="mon1" value="0"></td>
-                    <td><input type="text" id="mon2" value="0"></td>
-                    <td><input type="text" id="mon3" value="0"></td>
-                </tr>
-                <tr>
-                    <td colspan="6"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Điểm khuyến khích</th>
-                    <th colspan="2">Điểm trung bình cả năm 12</th>
-                    <th colspan="2">Điểm ưu tiên</th>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="text" id="khuyenKhich" value="0"></td>
-                    <td colspan="2"><input type="text" id="tb12" value="0"></td>
-                    <td colspan="2"><input type="text" id="diemUuTien" value="0"></td>
-                </tr>
-                <tr>
-                    <td colspan="6" rowspan="2">
-                        <center>
-                            <select name="" id="school">
-                                <option value="THPT">THPT</option>
-                                <option value="GDTX">GDTX</option>
-                            </select>
-                            <button type="button" onclick="tinhDiem()">Tính điểm</button>
-                        </center>
-                    </td>
-                </tr>
-                <tr></tr>
-            </table>
-        </form>
-        <br><br>
-        <form name="calculator">
-            <table border="1" cellpadding="20" cellspacing="0">
-                <tr>
-                    <th>Điểm sau khi tính</th>
-                    <td>
-                        <div id="diemSauKhiTinh"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Kết quả tốt nghiệp</th>
-                    <td>
-                        <div id="ketQuaTotNghiep"></div>
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <div class="tab1">
+            <form name="nhapDiem">
+                <table border="1" cellpadding="20" cellspacing="0">
+                    <tr>
+                        <th>Toán</th>
+                        <th>Văn</th>
+                        <th>Ngoại ngữ</th>
+                        <th>Lý / Sử</th>
+                        <th>Hóa / Địa</th>
+                        <th>Sinh / GDCD</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="toan" value="0"></td>
+                        <td><input type="text" id="van" value="0"></td>
+                        <td><input type="text" id="ngoaiNgu" value="0"></td>
+                        <td><input type="text" id="mon1" value="0"></td>
+                        <td><input type="text" id="mon2" value="0"></td>
+                        <td><input type="text" id="mon3" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Điểm khuyến khích</th>
+                        <th colspan="2">Điểm trung bình cả năm 12</th>
+                        <th colspan="2">Điểm ưu tiên</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="khuyenKhich" value="0"></td>
+                        <td colspan="2"><input type="text" id="tb12" value="0"></td>
+                        <td colspan="2"><input type="text" id="diemUuTien" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" rowspan="1">
+                            <center>
+                                <select name="" id="school">
+                                    <option value="THPT">THPT</option>
+                                    <option value="GDTX">GDTX</option>
+                                </select>
+                                <button type="button" onclick="tinhDiem()">Tính điểm</button>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Điểm sau khi tính</th>
+                        <th colspan="3">Kết quả tốt nghiệp</th>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div id="diemSauKhiTinh"></div>
+                        </td>
+                        <td colspan="3">
+                            <div id="ketQuaTotNghiep"></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p>Công thức mình lấy tại đây nhé: <a id="link2" href="https://vietnamnet.vn/vn/giao-duc/tuyen-sinh/cach-tinh-diem-xet-tot-nghiep-thpt-nam-2020-642646.html">Click!!</a></p>
+
+        </div>
+        <div class="tab2">
+            <h2>Hãy để lại ý kiến góp ý vào mục bình luận dưới đây nhé cảm ơn các bạn!!</h2>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=259930547916695&autoLogAppEvents=1" nonce="oCfXsVvR"></script>
+            <div class="fb-comments" data-href="https://hacken006.github.io/" data-numposts="5" data-width=""></div>
+            <br>
+            <br>
+        </div class="tab2">
+
     </center>
 </body>
 <footer>

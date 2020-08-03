@@ -38,8 +38,4 @@ function tinhDiem() {
 
     document.getElementById("ketQuaTotNghiep").innerHTML = text;
     document.getElementById("diemSauKhiTinh").innerHTML = result;
-    if (check == 0) {
-        alert("Chia buồn với bạn! Chúc bạn ôn tập tốt cho kỳ thi năm sau !")
-    } else
-        alert("Chúc mừng bạn đã vượt qua kỳ thi tốt nghiệp!")
 }

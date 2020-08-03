@@ -48,4 +48,17 @@ select {
 #ketQuaTotNghiep {
     color: red;
     font-weight: bold;
+    text-align: center;
+}
+
+#diemSauKhiTinh {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300;
+    color: red;
+}
+
+#link2 {
+    color: black;
+    font-weight: bold;
 }
