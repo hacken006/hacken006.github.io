@@ -26,62 +26,69 @@
     <center>
         <h2>Tính điểm xét tốt nghiệp THPT / GDTX năm 2020 Online</h2>
         <div class="tab1">
-            <form name="nhapDiem">
-                <table border="1" cellpadding="20" cellspacing="0">
-                    <tr>
-                        <th>Toán</th>
-                        <th>Văn</th>
-                        <th>Ngoại ngữ</th>
-                        <th>Lý / Sử</th>
-                        <th>Hóa / Địa</th>
-                        <th>Sinh / GDCD</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="toan" value="0"></td>
-                        <td><input type="text" id="van" value="0"></td>
-                        <td><input type="text" id="ngoaiNgu" value="0"></td>
-                        <td><input type="text" id="mon1" value="0"></td>
-                        <td><input type="text" id="mon2" value="0"></td>
-                        <td><input type="text" id="mon3" value="0"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th colspan="2">Điểm khuyến khích</th>
-                        <th colspan="2">Điểm trung bình cả năm 12</th>
-                        <th colspan="2">Điểm ưu tiên</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="text" id="khuyenKhich" value="0"></td>
-                        <td colspan="2"><input type="text" id="tb12" value="0"></td>
-                        <td colspan="2"><input type="text" id="diemUuTien" value="0"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="6" rowspan="1">
-                            <center>
-                                <input type="radio" name="school" id="THPT" checked> THPT
-                                <input type="radio" name="school" id="GDTX"> GDTX
-                                <br><br>
-                                <button type="button" onclick="tinhDiem()">Tính điểm</button>
-                            </center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Điểm sau khi tính</th>
-                        <th colspan="3">Kết quả tốt nghiệp</th>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Toán</th>
+                    <th>Văn</th>
+                    <th>Ngoại ngữ</th>
 
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <div id="diemSauKhiTinh">Chưa tính!</div>
-                        </td>
-                        <td colspan="3">
-                            <div id="ketQuaTotNghiep">Chưa tính!</div>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+                </tr>
+                <tr>
+                    <td><input type="text" id="toan" value="0"></td>
+                    <td><input type="text" id="van" value="0"></td>
+                    <td><input type="text" id="ngoaiNgu" value="0"></td>
+
+                </tr>
+                <tr>
+                    <th>Lý / Sử</th>
+                    <th>Hóa / Địa</th>
+                    <th>Sinh / GDCD</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="mon1" value="0"></td>
+                    <td><input type="text" id="mon2" value="0"></td>
+                    <td><input type="text" id="mon3" value="0"></td>
+                </tr>
+                <tr>
+                    <th colspan="1">Điểm khuyến khích</th>
+                    <th colspan="1">Điểm trung bình cả năm 12</th>
+                    <th colspan="1">Điểm ưu tiên</th>
+                </tr>
+                <tr>
+                    <td colspan="1"><input type="text" id="khuyenKhich" value="0"></td>
+                    <td colspan="1"><input type="text" id="tb12" value="0"></td>
+                    <td colspan="1"><input type="text" id="diemUuTien" value="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="1">
+                        <center>
+                            <input type="radio" name="school" id="THPT" checked> THPT
+                            <input type="radio" name="school" id="GDTX"> GDTX
+                            <br><br>
+                            <button type="button" onclick="tinhDiem()">Tính điểm</button>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="1">Điểm sau khi tính</th>
+                    <th colspan="1">Kết quả tốt nghiệp</th>
+                    <th>
+                        In kết quả
+                    </th>
+
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <div id="diemSauKhiTinh">Chưa tính!</div>
+                    </td>
+                    <td colspan="1">
+                        <div id="ketQuaTotNghiep">Chưa tính!</div>
+                    </td>
+                    <td>
+                        <center><input type="button" value="Print" onClick="window.print()"></center>
+                    </td>
+                </tr>
+            </table>
             <p>Công thức mình lấy tại đây nhé: <a id="link2" href="https://vietnamnet.vn/vn/giao-duc/tuyen-sinh/cach-tinh-diem-xet-tot-nghiep-thpt-nam-2020-642646.html">Click!!</a></p>
 
         </div>
