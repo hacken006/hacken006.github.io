@@ -8,6 +8,10 @@ textarea {
     resize: vertical;
 }
 
+body {
+    margin: auto;
+}
+
 button {
     height: 45px;
     color: white;
