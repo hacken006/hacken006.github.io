@@ -18,12 +18,12 @@ function tinhDiem() {
     var THPT = document.getElementById("THPT").checked;
 
     if (THPT) {
-        diem0 = (parseFloat(toan) + parseFloat(van) + parseFloat(ngoaiNgu) + parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3) + parseFloat(khuyenKhich)) / 4;
+        diem0 = (parseFloat(toan) + parseFloat(van) + parseFloat(ngoaiNgu) + (parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3)) / 3 + parseFloat(khuyenKhich)) / 4;
         if (toan < 1.1 || van < 1.1 || ngoaiNgu < 1.1 || mon1 < 1.1 || mon2 < 1.1 || mon3 < 1.1) {
             liet = true
         }
     } else {
-        diem0 = (parseFloat(toan) + parseFloat(van) + parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3)) / 3 + parseFloat(khuyenKhich) / 4;
+        diem0 = (parseFloat(toan) + parseFloat(van) + (parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3)) / 3) / 3 + parseFloat(khuyenKhich) / 4;
         if (toan < 1.1 || van < 1.1 || mon1 < 1.1 || mon2 < 1.1 || mon3 < 1.1) {
             liet = true
         }
