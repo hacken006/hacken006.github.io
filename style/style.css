@@ -26,18 +26,13 @@ h2 {
     color: tomato;
 }
 
-footer {
+.footer {
     text-align: center;
-    color: #ccc;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    color: rgb(0, 0, 0);
 }
 
 a {
-    color: greenyellow;
+    color: green;
     text-decoration: none;
 }
 
