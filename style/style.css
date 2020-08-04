@@ -59,6 +59,10 @@ select {
 }
 
 #link2 {
-    color: black;
+    color: red;
     font-weight: bold;
+}
+
+input {
+    text-align: center;
 }

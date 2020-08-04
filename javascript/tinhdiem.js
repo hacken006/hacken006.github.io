@@ -15,8 +15,9 @@ function tinhDiem() {
     tb12 = document.getElementById("tb12").value;
     diemUuTien = document.getElementById("diemUuTien").value;
 
-    var school = document.getElementById("school").value;
-    if (school == "THPT") {
+    var THPT = document.getElementById("THPT").checked;
+
+    if (THPT) {
         diem0 = (parseFloat(toan) + parseFloat(van) + parseFloat(ngoaiNgu) + parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3) + parseFloat(khuyenKhich)) / 4;
         if (toan < 1.1 || van < 1.1 || ngoaiNgu < 1.1 || mon1 < 1.1 || mon2 < 1.1 || mon3 < 1.1) {
             liet = true
@@ -37,5 +38,14 @@ function tinhDiem() {
     }
 
     document.getElementById("ketQuaTotNghiep").innerHTML = text;
-    document.getElementById("diemSauKhiTinh").innerHTML = result;
+    document.getElementById("diemSauKhiTinh").innerHTML = Math.round(result * 100) / 100;
+
+    if (check == 0) {
+        if (result < 5) {
+            document.getElementById().innerHTML = "Điểm trung bình phải lớn hơn 5!";
+        } else {
+            document.getElementById().innerHTML = "Bạn có môn bị liệt !"
+        }
+    }
+
 }
