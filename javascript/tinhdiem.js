@@ -42,9 +42,9 @@ function tinhDiem() {
 
     if (check == 0) {
         if (result < 5) {
-            document.getElementById().innerHTML = "Điểm trung bình phải lớn hơn 5!";
+            alert("Điểm trung bình phải lớn hơn 5!");
         } else {
-            document.getElementById().innerHTML = "Bạn có môn bị liệt !"
+            alert("Bạn có môn bị liệt !");
         }
     }
 
