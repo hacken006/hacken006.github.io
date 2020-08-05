@@ -1,10 +1,9 @@
 function tinhDiem() {
-    var liet = false;
-    var result = 0.0;
-    var diem0;
-    var text;
-    var check;
+    var liet = false,
+        result = 0.0,
+        diem0, text, check;
     var toan, van, ngoaiNgu, mon1, mon2, mon3, khuyenKhich, tb12, diemUuTien;
+    //get value from input form
     toan = document.getElementById("toan").value;
     van = document.getElementById("van").value;
     ngoaiNgu = document.getElementById("ngoaiNgu").value;
@@ -14,9 +13,8 @@ function tinhDiem() {
     khuyenKhich = document.getElementById("khuyenKhich").value;
     tb12 = document.getElementById("tb12").value;
     diemUuTien = document.getElementById("diemUuTien").value;
-
+    //check THPT or GDTX
     var THPT = document.getElementById("THPT").checked;
-
     if (THPT) {
         diem0 = (parseFloat(toan) + parseFloat(van) + parseFloat(ngoaiNgu) + (parseFloat(mon1) + parseFloat(mon2) + parseFloat(mon3)) / 3 + parseFloat(khuyenKhich)) / 4;
         if (toan < 1.1 || van < 1.1 || ngoaiNgu < 1.1 || mon1 < 1.1 || mon2 < 1.1 || mon3 < 1.1) {
@@ -36,15 +34,13 @@ function tinhDiem() {
         text = "Không Tốt Nghiệp!";
         check = 0;
     }
-
     document.getElementById("ketQuaTotNghiep").innerHTML = text;
     document.getElementById("diemSauKhiTinh").innerHTML = Math.round(result * 100) / 100;
     if (check == 0) {
-        if (result < 5) {
+        if (result <= 5) {
             alert("Điểm trung bình phải lớn hơn 5!");
         } else {
             alert("Bạn có môn bị liệt !");
         }
     }
-
 }
