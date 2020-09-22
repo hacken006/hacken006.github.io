@@ -3,57 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Nguyen Quang Truong</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.8/css/all.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 <link rel="icon" type="image/png" sizes="32x32"href="https://hacken006.github.io/image/favicon.png">
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<input id="slider" class="customSlider" type="checkbox">
-<label for="slider"></label>
+<!-- this is the markup. you can change the details (your own name, your own avatar etc.) but don’t change the basic structure! -->
 
-<div class="wrapper">
-	<!-- <div class="top-icons">
-		<i class="fas fa-long-arrow-alt-left"></i>
-		<i class="fas fa-ellipsis-v"></i>
-		<i class="far fa-heart"></i>
-	</div> -->
-	
-	<div class="profile">
-		<img src="https://graph.facebook.com/100010191461559/picture?type=large&width=720&height=720" class="thumbnail">
-		<div class="check"><i class="fas fa-check"></i></div>
-		<h3 class="name">Quang Truong</h3>
-		<p class="title">FPT University</p>
-		<p class="description"></p>
-		<button onclick="location.href='tel:0352918986';" type="button" class="btn">Call Me</button>
-	</div>
-	
-	<div class="social-icons">
-		<div class="icon">
-			<a href="mailto:truongnqhe140426@fpt.edu.vn"><i class="fas fa-envelope"></i></a>
-			<h4>Email</h4>
-			<!-- <p>Email</p> -->
-		</div>
-		
+<aside class="profile-card">
 
-		<div class="icon">
-			<a href="https://www.facebook.com/qt1st"><i class="fab fa-facebook-f"></i></a>
-			<h4>Facebook</h4>
-			<!-- <p>Followers</p> -->
-		</div>
-		
-		<div class="icon">
-			<a href="https://github.com/hacken006"><i class="fab fa-github"></i></a>
-			<h4>Github</h4>
-			<!-- <p>Phone</p> -->
-		</div>
+    <header>
+    
+        <!-- here’s the avatar -->
+        <a href="https://www.facebook.com/qt1st">
+            <img src="https://graph.facebook.com/100010191461559/picture?type=large&width=720&height=720" />
+        </a>
+        
+        <!-- the username -->
+        <h1>Quang Truong</h1>
+        
+        <!-- and role or location -->
+        <h2>FPT University</h2>
+    
+    </header>
 
-	</div>
-</div>
+    <!-- bit of a bio; who are you? -->
+    <div class="profile-bio">
+    
+        <p>Chào bạn ! Rất vui được làm quen hãy click vào icon bên dưới để kết bạn với mình nhé!</p>
+    
+    </div>
 
+    <!-- some social links to show off -->
+    <ul class="profile-social-links">
+        
+        <!-- twitter - el clásico  -->
+        <li>
+            <a href="mailto:truongnqhe140426@fpt.edu.vn">
+                <img width="24" height="24" src="https://www.flaticon.com/svg/static/icons/svg/732/732200.svg">
+            </a>
+        </li>
+        
+        <!-- envato – use this one to link to your marketplace profile -->
+        <li>
+            <a href="https://www.facebook.com/qt1st">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#3b5998" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                </svg>
+            </a>
+        </li>
+        
+        <!-- codepen - your codepen profile-->
+        <li>
+            <a href="https://github.com/hacken006">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
+                </svg>
+            </a>
+        </li>
+        
+        <!-- add or remove social profiles as you see fit -->
+    
+    </ul>
+
+</aside>
+<!-- that’s all folks! -->
 <!-- partial -->
-  <script src='https://code.jquery.com/jquery-3.3.1.slim.js'></script>
+  
 </body>
 </html>
+
